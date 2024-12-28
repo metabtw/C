@@ -9,23 +9,25 @@ Input validation
 Win detection
 Draw detection
 
+----
+
 **Functions Description**
 
-*void initializeBoard(char board[3][3])*
+**void initializeBoard(char board[3][3])**
 
 Initializes the game board with numbers 1-9
 Each number represents a cell position where players can make their moves
 
 ----
 
-*void displayBoard(char board[3][3])*
+**void displayBoard(char board[3][3])**
 
 Displays the current state of the board
 Shows a formatted 3x3 grid with cell contents and dividing lines
 
 ----
 
-*bool isValidMove(char board[3][3], int position)*
+**bool isValidMove(char board[3][3], int position)**
 
 Validates if a move is legal
 Checks if:
@@ -35,14 +37,14 @@ Selected cell is not already occupied
 
 ----
 
-*void makeMove(char board[3][3], int position, char symbol)*
+**void makeMove(char board[3][3], int position, char symbol)**
 
 Places the player's symbol (X or O) in the specified position
 Converts the position (1-9) to corresponding row and column indices
 
 ----
 
-*bool checkWinner(char board[3][3], char symbol)*
+**bool checkWinner(char board[3][3], char symbol)**
 
 Checks if the current player has won
 Verifies all winning conditions:
@@ -53,7 +55,7 @@ Three in a diagonal
 
 ----
 
-*bool isBoardFull(char board[3][3])*
+**bool isBoardFull(char board[3][3])**
 
 Checks if the game board is full (draw condition)
 Returns true if no empty cells remain
@@ -78,4 +80,3 @@ Game loop continues until there's a winner or draw
 Input validation prevents illegal moves
 Player turns alternate between X and O
 
-Would you like me to make any modifications to the code or add more documentation for your GitHub repository?
